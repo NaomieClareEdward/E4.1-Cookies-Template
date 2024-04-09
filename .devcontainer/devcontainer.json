@@ -9,7 +9,7 @@ For format details, see https://aka.ms/devcontainer.json
 For config options, see https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres
 */
 {
-    "name": "E3.3", // The name of your dev container.
+    "name": "E4.1", // The name of your dev container.
     "dockerComposeFile": "docker-compose.yml", // The Docker Compose file for your dev container.
     "service": "node", // The name of the service within the Docker Compose file to use as the primary service for your development environment.
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}", // The location of your workspace folder inside the dev container.
