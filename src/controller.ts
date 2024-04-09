@@ -105,7 +105,7 @@ const parseBody = async (req: IncomingMessage) => {
 
 /**
  * @returns The cookies of the request as a Record type object.
- * @example name=Pikachu;type=Electric => { "name": "Pikachu", "type": "Electric" }
+ * @example name=Pikachu; type=Electric => { "name": "Pikachu", "type": "Electric" }
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie
  * @see https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type
  */
@@ -113,7 +113,8 @@ const getCookies = (req: IncomingMessage): Record<string, string> => {
     /** TODO:
      * 1. Get the cookie header from the request.
      * 2. Parse the cookie header into a Record<string, string> object.
-     *    - Split the cookie header by the semicolon.
+     *    - Split the cookie header by the semicolon + space.
+     *      - Ex. "name=Pikachu; type=Electric" -> make sure to split by "; "!
      *    - Split each cookie by the equals sign.
      *    - Assign the name as the key and the value as the value.
      * 3. Return the object.
