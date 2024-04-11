@@ -1,14 +1,12 @@
 {
-    "name": "4.1-cookies",
+    "name": "2.1-http",
     "scripts": {
-        "server": "nodemon -L --watch 'src/**/*.ts' --exec 'tsx' src/server.ts"
+        "server": "nodemon -L -e ts,hbs --watch 'src' --exec 'tsx' src/server.ts"
     },
     "dependencies": {
         "@types/node": "^20.11.10",
-        "dotenv": "^16.4.5",
-        "handlebars": "^4.7.8",
+        "nodemon": "^3.0.3",
         "prettier": "^3.2.4",
-        "typescript": "^5.3.3",
-        "nodemon": "^3.0.3"
+        "typescript": "^5.3.3"
     }
 }
