@@ -3,6 +3,7 @@ import {
     getAllPokemon,
     getHome,
     getOnePokemon,
+    changeLanguage
 } from "./controller";
 
 interface RouteHandler {
@@ -25,3 +26,4 @@ export const routes: Routes = {
 routes.GET["/"] = getHome;
 routes.GET["/pokemon"] = getAllPokemon;
 routes.GET["/pokemon/:id"] = getOnePokemon;
+routes.POST["/language"] = changeLanguage;
